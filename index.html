@@ -16,9 +16,10 @@
     }
     body {
       font-family: var(--font-family-sans-serif);
+      padding-top: 56px; /* Adjusted for fixed navbar */
     }
     .hero {
-      background: url('https://i.imgur.com/8Q1mC6C.jpeg') no-repeat center center;
+      background: url('https://i.imgur.com/sC7n4T5.jpeg') no-repeat center center;
       background-size: cover;
       color: white;
       position: relative;
@@ -28,16 +29,17 @@
       padding: 100px 20px;
     }
     .service-card {
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     .service-card:hover {
       transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     .service-img {
       width: 100%;
       height: 180px;
       object-fit: cover;
-      border-radius: 8px;
     }
     .portfolio-item img {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -92,8 +94,8 @@
       <h2 class="mb-5">Our Services</h2>
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm service-card">
-            <img src="https://i.imgur.com/Y8w2n9G.jpeg" class="card-img-top service-img" alt="SharePoint Development">
+          <div class="card h-100 border-0 service-card">
+            <img src="https://i.imgur.com/gC5lJ8u.jpeg" class="card-img-top service-img" alt="SharePoint Development">
             <div class="card-body">
               <h5 class="card-title fw-bold">SharePoint Development</h5>
               <p class="card-text text-muted">Custom portals, workflows, and modern UI for internal collaboration and knowledge management.</p>
@@ -101,8 +103,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm service-card">
-            <img src="https://i.imgur.com/xZ3sWv2.jpeg" class="card-img-top service-img" alt="Power Platform Solutions">
+          <div class="card h-100 border-0 service-card">
+            <img src="https://i.imgur.com/9qPzVUN.jpeg" class="card-img-top service-img" alt="Power Platform Solutions">
             <div class="card-body">
               <h5 class="card-title fw-bold">Power Platform Solutions</h5>
               <p class="card-text text-muted">Build apps and automate tasks using PowerApps, Power Automate, and Power BI dashboards.</p>
@@ -110,8 +112,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm service-card">
-            <img src="https://i.imgur.com/T5x3kG8.jpeg" class="card-img-top service-img" alt="Custom Development">
+          <div class="card h-100 border-0 service-card">
+            <img src="https://i.imgur.com/rO13fhi.jpeg" class="card-img-top service-img" alt="Custom Development">
             <div class="card-body">
               <h5 class="card-title fw-bold">Custom Development</h5>
               <p class="card-text text-muted">Automations and integrations with Python, Java, C++, and cloud tools tailored to your business.</p>
@@ -119,8 +121,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm service-card">
-            <img src="https://i.imgur.com/y3A1R1m.jpeg" class="card-img-top service-img" alt="AI-Generated Works">
+          <div class="card h-100 border-0 service-card">
+            <img src="https://i.imgur.com/k9vT7sW.jpeg" class="card-img-top service-img" alt="AI-Generated Works">
             <div class="card-body">
               <h5 class="card-title fw-bold">AI-Generated Works</h5>
               <p class="card-text text-muted">Innovative AI-driven solutions including chatbots, content generation, and custom ML models.</p>
@@ -131,28 +133,28 @@
     </div>
   </section>
 
-  <section id="portfolio" class="py-5 text-center">
-    <div class="container">
+  <section id="portfolio" class="py-5">
+    <div class="container text-center">
       <h2 class="mb-5">Portfolio Highlights</h2>
       <div class="row g-4">
         <div class="col-md-4 portfolio-item">
-          <img src="https://i.imgur.com/Y8w2n9G.jpeg" class="img-fluid rounded" alt="Automated Onboarding Workflow">
+          <img src="https://i.imgur.com/vH1x5aE.jpeg" class="img-fluid rounded" alt="Automated Onboarding Workflow">
           <p class="fw-semibold mt-2">Automated Onboarding Workflow</p>
         </div>
         <div class="col-md-4 portfolio-item">
-          <img src="https://i.imgur.com/kP4gA6P.jpeg" class="img-fluid rounded" alt="PowerApps HR Tool">
+          <img src="https://i.imgur.com/xYYPABr.jpeg" class="img-fluid rounded" alt="PowerApps HR Tool">
           <p class="fw-semibold mt-2">PowerApps HR Tool</p>
         </div>
         <div class="col-md-4 portfolio-item">
-          <img src="https://i.imgur.com/fL5zV1H.jpeg" class="img-fluid rounded" alt="Power BI Operations Dashboard">
+          <img src="https://i.imgur.com/sZwzS0B.jpeg" class="img-fluid rounded" alt="Power BI Operations Dashboard">
           <p class="fw-semibold mt-2">Power BI Operations Dashboard</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="bg-light py-5 text-center">
-    <div class="container">
+  <section id="contact" class="bg-light py-5">
+    <div class="container text-center">
       <h2 class="mb-3">Get In Touch</h2>
       <p class="text-muted mb-4">Reach out to discuss your digital transformation goals.</p>
       <form action="https://formspree.io/f/your-form-id" method="POST" class="mx-auto" style="max-width:500px;">
